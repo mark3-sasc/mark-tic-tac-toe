@@ -1,7 +1,26 @@
-// Import stylesheets
-import './style.css';
+// Adds style.css to the code, this is one way to do it
+// there are other ways but they don't work on
+// stackblitz
+import "./style.css";
 
+var tdElements = document.getElementsByTagName("TD");
 
-// Write TypeScript code!
-const appDiv: HTMLElement = document.getElementById('app');
-appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
+for (var tdElement of tdElements) {
+  tdElement.addEventListener("click", handleClick);
+}
+
+var isTheClickForAnO = false;
+
+function handleClick(event) {
+  var targetTd = event.target;
+
+  if (isTheClickForAnO) {
+    targetTd.innerHTML = "O";
+    targetTd.classList.add("O");
+    isTheClickForAnO = false;
+  } else {
+    targetTd.innerHTML = "X";
+    targetTd.classList.add("X");
+    isTheClickForAnO = true;
+  }
+}
