@@ -13,7 +13,7 @@ var isTheClickForAnO = false;
 
 function handleClick(event) {
   var targetTd = event.target;
-
+	background-color: yellow;
   if (isTheClickForAnO) {
     targetTd.innerHTML = "O";
     targetTd.classList.add("O");
@@ -24,4 +24,7 @@ function handleClick(event) {
     isTheClickForAnO = true;
   }
 }
-//AlertifhandleClick.
+
+	} 
+
+//    AlertifhandleClick.
