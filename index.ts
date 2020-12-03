@@ -28,3 +28,4 @@ function handleClick(event) {
 	} 
 
 //    AlertifhandleClick.
+ffhfjjhghjgh
