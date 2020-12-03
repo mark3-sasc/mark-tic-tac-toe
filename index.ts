@@ -24,4 +24,4 @@ function handleClick(event) {
     isTheClickForAnO = true;
   }
 }
-// hi there!
+//AlertifhandleClick.
