@@ -7,7 +7,7 @@ var tdElements = document.getElementsByTagName("TD");
 
 for (var tdElement of tdElements) {
   tdElement.addEventListener("click", handleClick);
-}
+} k
 
 var isTheClickForAnO = false;
 
