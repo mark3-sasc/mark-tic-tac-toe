@@ -1,30 +1,6 @@
-// Adds style.css to the code, this is one way to do it
-// there are other ways but they don't work on
-// stackblitz
 import "./style.css";
+import "./extra.css";
+import { basicVar } from "./basic";
+import { extraVar } from "./extra";
 
-var tdElements = document.getElementsByTagName("TD");
-
-for (var tdElement of tdElements) {
-  tdElement.addEventListener("click", handleClick);
-} k
-
-var isTheClickForAnO = false;
-
-function handleClick(event) {
-  var targetTd = event.target;
-	background-color: yellow;
-  if (isTheClickForAnO) {
-    targetTd.innerHTML = "O";
-    targetTd.classList.add("O");
-    isTheClickForAnO = false;
-  } else {
-    targetTd.innerHTML = "X";
-    targetTd.classList.add("X");
-    isTheClickForAnO = true;
-  }
-}
-
-	} 
-
-// hi
+console.log(basicVar + extraVar); 
