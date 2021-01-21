@@ -7,20 +7,11 @@ var board = [
   [null, null, null], // rowIndex="0"
   [null, null, null], // rowIndex="1"
   [null, null, null] // rowIndex="2"
-];
+]; // Meeting on google
 
-var winningConditions = [
-  [{ row: 0, column: 0 }, { row: 1, column: 0 }, { row: 2, column: 0 }],
-  [{ row: 0, column: 1 }, { row: 1, column: 1 }, { row: 2, column: 1 }],
-  [{ row: 0, column: 2 }, { row: 1, column: 2 }, { row: 2, column: 2 }],
-  [{ row: 0, column: 0 }, { row: 0, column: 1 }, { row: 0, column: 2 }],
-  [{ row: 1, column: 0 }, { row: 1, column: 1 }, { row: 1, column: 2 }],
-  [{ row: 2, column: 0 }, { row: 2, column: 1 }, { row: 2, column: 2 }],
-  [{ row: 0, column: 0 }, { row: 1, column: 1 }, { row: 2, column: 2 }],
-  [{ row: 0, column: 2 }, { row: 1, column: 1 }, { row: 0, column: 2 }]
-];
 
 function whoWon() {
+ for (var winningCondition)
   // return 'X' 'O' or null
   return null;
 }
@@ -37,7 +28,6 @@ function handleClick(event) {
   var rowIndex = parseInt(targetTd.parentElement.getAttribute("rowIndex"));
   var columnIndex = parseInt(targetTd.getAttribute("columnIndex"));
 
-  if (board[rowIndex][columnIndex]) {
     // There is already a value on the board
     return;
   }
